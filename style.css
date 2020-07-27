@@ -6,7 +6,7 @@
 
 /* Body CSS */
 body {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
   background-color: rgb(255, 255, 255);
 }
@@ -82,7 +82,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: rosybrown;
+  background-color: rgb(71, 80, 126);
   color: white;
 }
 
