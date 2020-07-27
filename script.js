@@ -47,4 +47,15 @@ $(document).ready(function () {
     let textBox = $(".text-box");
     let clearBtn = $(".clr-btn");
 
-    
+    //local storage
+    function displayToDo() {
+        for (let i = 0; i < 12; i++) {
+            let storedCalList = localStorage.getItem("text" + i);
+            $("#text" + i).text(storedCalList);
+        }
+    }
+
+    function addText(event) {
+        event.preventDefault();
+        localStorage.setItem($(this)[0].previousElementSibling.id, $(this)[0].previousElementSibling.value);
+    }
