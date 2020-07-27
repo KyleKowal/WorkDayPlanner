@@ -26,3 +26,17 @@ $(document).ready(function() {
     // Create save button div
     const saveDiv = $("<div>").addClass("col-1 d-flex align-items-center justify-content-center saveBtn save-block");
     let saveBtnIcon = $("<button>").addClass("btn fas fa-save fa-lg save-button").attr("id", i).attr("title", "Save");
+
+    $(".container").append(rowDiv.append(hourDiv,textDiv,saveDiv.append(saveBtnIcon)));
+
+    // Color code textDiv
+    if (todaysDate.isAfter(date, "hour")) {
+        textDiv.addClass("past");
+    } else if (todaysDate.isBefore(date, "hour")) {
+        textDiv.addClass("future");
+    } else {
+        textDiv.addClass("present");
+    }
+    date.add(1, "hour");
+}        
+}
