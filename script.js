@@ -59,3 +59,7 @@ $(document).ready(function () {
         event.preventDefault();
         localStorage.setItem($(this)[0].previousElementSibling.id, $(this)[0].previousElementSibling.value);
     }
+
+    // event to save text
+    saveButton.click(addText);
+    displayToDo();
