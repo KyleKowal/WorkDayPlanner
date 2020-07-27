@@ -63,3 +63,11 @@ $(document).ready(function () {
     // event to save text
     saveButton.click(addText);
     displayToDo();
+
+    // clear schedule
+    clearBtn.on("click", function() {
+        localStorage.clear();
+        textBox.empty();
+        location.reload();
+    });
+});
