@@ -1,0 +1,92 @@
+
+/* Set font */
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Body CSS */
+body {
+  font-size: 12px;
+  line-height: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Text box CSS */
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 5px;
+}
+
+/* Header CSS */
+.jumbotron {
+  text-align: center;
+  background-color: rgb(71, 80, 126);
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+/* Time */
+.time-block,
+.save-block {
+  text-align: left;
+  border-radius: 15px;
+  color: black;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px ;
+}
+
+.hour {
+  color: #000000;
+  border-top: 1px dashed #000000;
+  border-bottom: 1px dashed #000000;
+  font-size: large;
+}
+
+/* Color Coding based on times */
+.past {
+  background-color: #868686;
+}
+
+.present {
+  background-color: #9bff61;
+}
+
+.future {
+  background-color: #f53e84;
+}
+
+/* Button CSS */
+.clr-btn {
+  border: 1px solid black;
+}
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rosybrown;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
